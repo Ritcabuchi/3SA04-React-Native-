@@ -1,7 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import Forecast from './Forecast'
-
 export default class Weather extends React.Component {
     constructor(props) {
         super(props);
@@ -30,11 +29,11 @@ export default class Weather extends React.Component {
             });
     }
     componentDidMount = () => this.fetchData()
+
     render() {
         return (
-            <View style={styles.container}>
-
-                <ImageBackground source={require('../bg.jpeg')} style={styles.backdrop}>
+            <View>
+                <ImageBackground source={require('../bg2.jpeg')} style={styles.backdrop}>
                     <Forecast {...this.state.forecast} />
                 </ImageBackground>
             </View>
@@ -42,6 +41,5 @@ export default class Weather extends React.Component {
     }
 }
 const styles = StyleSheet.create({
-    container: { paddingTop: 25 },
     backdrop: { width: '100%', height: '100%' },
 });
