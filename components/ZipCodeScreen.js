@@ -23,6 +23,12 @@ export default class WeatherScreen extends React.Component {
             headerStyle: {
                 backgroundColor: '#01579b',
               },
+              titleStyle: {
+                fontFamily: 'MuseoSansRounded-300',
+                fontWeight: '300',
+                textAlign: 'center'
+              },
+        
         }
     }
     render() {
